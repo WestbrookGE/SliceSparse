@@ -1,0 +1,19 @@
+ToolsDir=.\Tools\c++\
+MetricsDir=.\Tools\metrics\
+INC=/I$(ToolsDir)
+CXXFLAGS=/O2 /fopenmp
+all: clean slice_train slice_predict smat_to_dmat dmat_to_smat precision_k nDCG_k
+slice_train:
+	cl /EHsc /Fe:slice_train.exe $(CXXFLAGS) $(INC) slice_train.cpp slice.cpp  
+slice_predict:
+	cl /EHsc /Fe:slice_predict $(CXXFLAGS) $(INC) slice_predict.cpp slice.cpp  
+smat_to_dmat:
+	cl /EHsc /Fe:$(ToolsDir)smat_to_dmat $(CXXFLAGS) $(INC) $(ToolsDir)smat_to_dmat.cpp
+dmat_to_smat:
+	cl /EHsc /Fe:$(ToolsDir)dmat_to_smat $(CXXFLAGS) $(INC) $(ToolsDir)dmat_to_smat.cpp
+precision_k:
+	cl /EHsc /Fe:$(MetricsDir)precision_k $(CXXFLAGS) $(INC) $(MetricsDir)precision_k.cpp	
+nDCG_k:
+	cl /EHsc /Fe:$(MetricsDir)nDCG_k $(CXXFLAGS) $(INC) $(MetricsDir)nDCG_k.cpp	
+clean:
+	rm /f slice_train.obj slice_predict.obj $(ToolsDir)smat_to_dmat.obj $(ToolsDir)dmat_to_smat.obj $(MetricsDir)precision_k.obj $(MetricsDir)nDCG_k.obj
