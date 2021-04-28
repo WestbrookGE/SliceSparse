@@ -1,6 +1,6 @@
 # SliceSparse
 
-A **Sparse-Data** implementation of paper
+A **Sparse-Input** implementation of paper
 
 >[**Slice: Scalable Linear Extreme Classifiers**](http://manikvarma.org/code/Slice/download.html)
 
