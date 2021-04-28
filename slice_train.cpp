@@ -158,6 +158,6 @@ int main(int argc, char* argv[])
 	w_dis->write(model_dir+"/w_discriminative.txt", 0);
 	delete trn_ft_mat;
 	delete trn_lbl_mat;
-	delete trn_lbl_mat_new;
+	//delete trn_lbl_mat_new;
 	delete w_dis;
 }

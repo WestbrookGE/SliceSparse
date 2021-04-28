@@ -4,6 +4,7 @@ import nmslib
 import time
 import math
 from multiprocessing import Process
+from xclib.data import data_utils
 
 def write_knn_out(out_dir,write_dist,num_inst,nbrs,batch_no,metric_space):
 	with open('%s/%d'%(out_dir,batch_no),'w') as fp:
@@ -49,18 +50,17 @@ out_dir = sys.argv[8]
 num_thread = int(sys.argv[9])
 num_out_threads = int(sys.argv[10])
 metric_space = sys.argv[11]
+lbl_ft_file = sys.argv[12]
 
-index = nmslib.init(method='hnsw', space=metric_space)
+index = nmslib.init(method='hnsw', space='cosinesimil_sparse', data_type=nmslib.DataType.SPARSE_VECTOR)
+data = data_utils.read_sparse_file(lbl_ft_file)
+index.addDataPointBatch(data)
 nmslib.loadIndex(index,model_file)
 
 index.setQueryTimeParams({'efSearch': efS, 'algoType': 'old'})
 
 start = time.time()
-fp = open(tst_ft_file,'rb')
-fp.seek(8)
-query = numpy.fromfile(fp,dtype=numpy.float32,count=-1,sep='')
-query = numpy.reshape(query,(int(len(query)/num_ft),num_ft))
-fp.close()
+query = data_utils.read_sparse_file(tst_ft_file)
 end = time.time()
 start = time.time()
 nbrs = index.knnQueryBatch(query, k=num_nbrs, num_threads = num_thread)

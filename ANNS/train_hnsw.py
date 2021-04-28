@@ -4,6 +4,8 @@ import nmslib
 import time
 import math
 import pdb
+from xclib.data import data_utils
+import hnswlib
 
 lbl_ft_file = sys.argv[1]
 model_file = sys.argv[2]
@@ -14,13 +16,10 @@ num_ft = int(sys.argv[6])
 metric_space = sys.argv[7]
 
 start = time.time()
-fp = open(lbl_ft_file,'rb')
-fp.seek(8)
-data = numpy.fromfile(fp,dtype=numpy.float32,count=-1,sep='')
-data = numpy.reshape(data,(int(len(data)/num_ft),num_ft))
+data = data_utils.read_sparse_file(lbl_ft_file)
 end = time.time()
 start = time.time()
-index = nmslib.init(method='hnsw', space=metric_space)
+index = nmslib.init(method='hnsw', space='cosinesimil_sparse', data_type=nmslib.DataType.SPARSE_VECTOR)
 index.addDataPointBatch(data)
 index.createIndex({'M': M, 'indexThreadQty': num_threads, 'efConstruction': efC})
 end = time.time()

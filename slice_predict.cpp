@@ -110,8 +110,8 @@ int main(int argc, char* argv[])
 	
 	Param params = parse_param( argc-4, argv+4, model_dir);
 
-	DMatF* tst_ft_mat = new DMatF( ft_file, 0);
-	DMatF* w_dis = new DMatF(model_dir+"/w_discriminative.txt", 0);
+	SMatF* tst_ft_mat = new SMatF( ft_file, 0);
+	SMatF* w_dis = new SMatF(model_dir+"/w_discriminative.txt", 0);
 
 	if (!params.quiet)
 		cout<<".............. Slice prediction started ..............."<<endl;

@@ -1,0 +1,112 @@
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+/home/hzlb230017/.local/lib/python3.7/site-packages/xclib-0.96-py3.7-linux-x86_64.egg/xclib/data/data_utils.py:173: UserWarning: Header mis-match from inferred shape!
+  warnings.warn("Header mis-match from inferred shape!")
+./core.sh: line 4: 6: command not found
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+./qt.sh: line 37: hread: command not found
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+./core.sh: line 4: 325K: command not found
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+/home/hzlb230017/.local/lib/python3.7/site-packages/xclib-0.96-py3.7-linux-x86_64.egg/xclib/data/data_utils.py:173: UserWarning: Header mis-match from inferred shape!
+  warnings.warn("Header mis-match from inferred shape!")
+Traceback (most recent call last):
+  File "ANNS/train_hnsw.py", line 19, in <module>
+    data = data_utils.read_sparse_file(lbl_ft_file)
+  File "/home/hzlb230017/.local/lib/python3.7/site-packages/xclib-0.96-py3.7-linux-x86_64.egg/xclib/data/data_utils.py", line 177, in read_sparse_file
+    assert shape[1] <= _header_shape[1], "num_cols_inferred > num_cols_header"
+AssertionError: num_cols_inferred > num_cols_header
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+/home/hzlb230017/.local/lib/python3.7/site-packages/xclib-0.96-py3.7-linux-x86_64.egg/xclib/data/data_utils.py:173: UserWarning: Header mis-match from inferred shape!
+  warnings.warn("Header mis-match from inferred shape!")
+Traceback (most recent call last):
+  File "ANNS/test_hnsw.py", line 56, in <module>
+    data = data_utils.read_sparse_file(lbl_ft_file)
+  File "/home/hzlb230017/.local/lib/python3.7/site-packages/xclib-0.96-py3.7-linux-x86_64.egg/xclib/data/data_utils.py", line 177, in read_sparse_file
+    assert shape[1] <= _header_shape[1], "num_cols_inferred > num_cols_header"
+AssertionError: num_cols_inferred > num_cols_header
+error: invalid file name: /home/hzlb230017/data/Wikipedia-500K/model/2000NN/tmp/0
+exiting...
+error: invalid file name: /home/hzlb230017/data/Wikipedia-500K/model/2000NN/w_discriminative.txt
+exiting...
+precision_k: ./Tools/metrics/precision_k.cpp:68: int main(int, char**): Assertion `score_mat->nc==lbl_mat->nc' failed.
+terminate called after throwing an instance of 'std::bad_array_new_length'
+  what():  std::bad_array_new_length
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+Killed
+error: invalid file name: /home/hzlb230017/data/WikiLSHTC-325K/model/2000NN/tmp/0
+exiting...
+error: invalid file name: /home/hzlb230017/data/WikiLSHTC-325K/model/2000NN/w_discriminative.txt
+exiting...
+precision_k: ./Tools/metrics/precision_k.cpp:68: int main(int, char**): Assertion `score_mat->nc==lbl_mat->nc' failed.
+nDCG_k: ./Tools/metrics/nDCG_k.cpp:92: int main(int, char**): Assertion `score_mat->nc==lbl_mat->nc' failed.
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+/home/hzlb230017/.local/lib/python3.7/site-packages/xclib-0.96-py3.7-linux-x86_64.egg/xclib/data/data_utils.py:173: UserWarning: Header mis-match from inferred shape!
+  warnings.warn("Header mis-match from inferred shape!")
+Traceback (most recent call last):
+  File "ANNS/train_hnsw.py", line 19, in <module>
+    data = data_utils.read_sparse_file(lbl_ft_file)
+  File "/home/hzlb230017/.local/lib/python3.7/site-packages/xclib-0.96-py3.7-linux-x86_64.egg/xclib/data/data_utils.py", line 177, in read_sparse_file
+    assert shape[1] <= _header_shape[1], "num_cols_inferred > num_cols_header"
+AssertionError: num_cols_inferred > num_cols_header
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+/home/hzlb230017/.local/lib/python3.7/site-packages/xclib-0.96-py3.7-linux-x86_64.egg/xclib/data/data_utils.py:173: UserWarning: Header mis-match from inferred shape!
+  warnings.warn("Header mis-match from inferred shape!")
+Traceback (most recent call last):
+  File "ANNS/test_hnsw.py", line 56, in <module>
+    data = data_utils.read_sparse_file(lbl_ft_file)
+  File "/home/hzlb230017/.local/lib/python3.7/site-packages/xclib-0.96-py3.7-linux-x86_64.egg/xclib/data/data_utils.py", line 177, in read_sparse_file
+    assert shape[1] <= _header_shape[1], "num_cols_inferred > num_cols_header"
+AssertionError: num_cols_inferred > num_cols_header
+error: invalid file name: /home/hzlb230017/data/Wikipedia-500K/model/2000NN/tmp/0
+exiting...
+error: invalid file name: /home/hzlb230017/data/Wikipedia-500K/model/2000NN/w_discriminative.txt
+exiting...
+terminate called after throwing an instance of 'std::bad_array_new_length'
+  what():  std::bad_array_new_length
+nDCG_k: ./Tools/metrics/nDCG_k.cpp:92: int main(int, char**): Assertion `score_mat->nc==lbl_mat->nc' failed.
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib
+Your CPU supports instructions that this binary was not compiled to use: SSE3 SSE4.1 SSE4.2 AVX AVX2
+For maximum performance, you can install NMSLIB from sources 
+pip install --no-binary :all: nmslib

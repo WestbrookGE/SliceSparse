@@ -132,5 +132,5 @@ public:
 	}
 };
 
-DMatF* train_slice(DMatF* trn_ft_mat, SMatF* trn_lbl_mat, string model_dir, Param& params, float& train_time);
-SMatF* predict_slice(DMatF* tst_ft_mat, DMatF* w_dis, string model_dir, Param& params, float& test_time); 
+SMatF* train_slice(SMatF* trn_ft_mat, SMatF* trn_lbl_mat, string model_dir, Param& params, float& train_time);
+SMatF* predict_slice(SMatF* tst_ft_mat, SMatF* w_dis, string model_dir, Param& params, float& test_time); 
